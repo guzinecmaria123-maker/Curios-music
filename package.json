@@ -1,0 +1,30 @@
+{
+  "name": "nfts-by-curios-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node server.js",
+  "dev": "node --watch server.js --dev",
+  "sync": "browser-sync start --proxy localhost:3000 --files \"public/**/*\" --no-notify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guzinecmaria123-maker/Curios-music.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/guzinecmaria123-maker/Curios-music/issues"
+  },
+  "homepage": "https://github.com/guzinecmaria123-maker/Curios-music#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "helmet": "^8.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
