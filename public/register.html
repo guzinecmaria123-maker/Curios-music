@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Register — NFTs by Curios Music</title>
+  </head>
+  <body>
+    <header class="nav">
+      <nav class="menu">
+        <a href="index.html" class="home">HOME</a>
+        <a href="#" class="discover">DISCOVER</a>
+        <a href="#" class="marketplace">MARKETPLACE</a>
+        <a href="register.html" class="register">REGISTER</a>
+      </nav>
+    </header>
+    <main class="register-page">
+      <form class="register-card" id="register-form" novalidate>
+        <h1 class="register-title">Create account</h1>
+        <p class="register-subtitle">Join Curios Music and start collecting NFTs</p>
+
+        <label class="field">
+          <span class="field-label">Username</span>
+          <span class="field-input">
+            <i class="fi fi-rr-user"></i>
+            <input type="text" name="username" placeholder="Your username" autocomplete="username" required minlength="3" />
+          </span>
+          <span class="field-error"></span>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Email</span>
+          <span class="field-input">
+            <i class="fi fi-rr-envelope"></i>
+            <input type="email" name="email" placeholder="Your email" autocomplete="email" required />
+          </span>
+          <span class="field-error"></span>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Password</span>
+          <span class="field-input">
+            <i class="fi fi-rr-lock"></i>
+            <input type="password" name="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8" />
+            <button type="button" class="toggle-password" aria-label="Show password">
+              <i class="fi fi-rr-eye"></i>
+            </button>
+          </span>
+          <span class="field-error"></span>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Confirm password</span>
+          <span class="field-input">
+            <i class="fi fi-rr-lock"></i>
+            <input type="password" name="confirm" placeholder="Repeat password" autocomplete="new-password" required />
+          </span>
+          <span class="field-error"></span>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="terms" required />
+          <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <span class="field-error terms-error"></span>
+
+        <button type="submit" class="register-btn">Sign up</button>
+
+        <p class="register-success" hidden>Account created! Welcome to Curios Music.</p>
+
+        <p class="register-login">Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </main>
+    <script src="register.js"></script>
+  </body>
+</html>

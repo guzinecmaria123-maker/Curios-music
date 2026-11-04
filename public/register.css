@@ -1,0 +1,186 @@
+/* --- СТРАНИЦА РЕГИСТРАЦИИ --- */
+a.register {
+  text-decoration: none;
+}
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* градиентная рамка как у карточек */
+.register-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px 36px;
+  border-radius: 16px;
+  background:
+    linear-gradient(rgba(10, 4, 25, 0.88), rgba(10, 4, 25, 0.88)) padding-box,
+    linear-gradient(135deg, #bb82db, #636dc1, #d70bca) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 40px rgba(93, 0, 250, 0.35);
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-title {
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #bbb;
+  font-size: 15px;
+  margin: -8px 0 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+/* поле в стиле подписки в футере */
+.field-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #555;
+  border-radius: 999px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field-input:focus-within {
+  border-color: #d70bca;
+  box-shadow: 0 0 0 3px rgba(215, 11, 202, 0.2);
+}
+
+.field.invalid .field-input {
+  border-color: #ff4d6d;
+}
+
+.field-input i {
+  color: white;
+  font-size: 16px;
+  display: flex;
+}
+
+.field-input input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+}
+
+.field-input input::placeholder {
+  color: #aaa;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.field-error {
+  color: #ff4d6d;
+  font-size: 12px;
+  min-height: 14px;
+  padding-left: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: #d70bca;
+  cursor: pointer;
+}
+
+.checkbox a,
+.register-login a {
+  color: #bb82db;
+  text-decoration: none;
+}
+
+.checkbox a:hover,
+.register-login a:hover {
+  color: #d70bca;
+}
+
+.terms-error {
+  margin-top: -14px;
+}
+
+/* кнопка как "Latest NFT drops" */
+.register-btn {
+  height: 49px;
+  border: none;
+  border-radius: 46px;
+  background: linear-gradient(#5d00fa, #d70bca);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(215, 11, 202, 0.4);
+}
+
+.register-success {
+  text-align: center;
+  color: #7dffb0;
+  margin: 0;
+}
+
+.register-login {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 26px;
+  }
+}
